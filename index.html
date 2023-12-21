@@ -18,6 +18,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
 
     <style>
         body {
@@ -105,6 +108,16 @@
                     <option value="Dezembro">Dezembro</option>
                 </select>
             </div>
+            <div class="mb-3">
+                <label for="referenceNumber" class="form-label">Número Referente:</label>
+                <select class="form-select" style="background-color: rgb(255, 255, 255);" id="referenceNumber">
+                    <!-- Adicione as opções com os números desejados -->
+                    <option value="(37) 9 8404-4166">Larissa</option>
+                    <option value="(37) 9 9906-0592">Lucas</option>
+                    <option value="(37) 9 8843-4035">Camila</option>
+                    <!-- Adicione mais opções conforme necessário -->
+                </select>
+            </div>
             
             <button type="button" onclick="gerarEImprimir()" class="btn btn-primary">Gerar e Imprimir Mensagens de Boletos</button>
         </form>
@@ -133,6 +146,7 @@
         var endereco1 = document.getElementById("address1").value;
         var dia = document.getElementById("day").value;
         var mes = document.getElementById("month").value.toUpperCase();
+        var numeroReferente = document.getElementById("referenceNumber").value;
 
         // Mensagem para o Cliente 2
         var mensagem1 = document.querySelector(".mensagem1");
@@ -158,10 +172,19 @@
             <p>
                 Esperamos que esteja tudo bem com você. Agradecemos por escolher a NewFiber como sua provedora de internet. Queremos compartilhar uma ótima notícia sobre uma oportunidade emocionante para melhorar sua conexão no endereço ${endereco1}. Agora, você pode obter um upgrade (aumento de velocidade) para tornar sua internet ainda mais rápida e estável.<br>
 <br>
-                Se tiver alguma dúvida ou precisar de mais informações, fique à vontade para nos ligar ou enviar uma mensagem. Estamos aqui para ajudar e garantir que você aproveite ao máximo nossos serviços. Obrigado por confiar em nós!<br><br><br>Atenciosamente,<br><br>DIREÇÃO DA NEWFIBER<br>(37) 3226-9519.
+                Se tiver alguma dúvida ou precisar de mais informações, fique à vontade para nos ligar ou enviar uma mensagem. Estamos aqui para ajudar e garantir que você aproveite ao máximo nossos serviços. Obrigado por confiar em nós!<br><br><br>Atenciosamente,<br><br>DIREÇÃO DA NEWFIBER<br>   <span style="font-size: 18px;font-family: 'Noto Sans', sans-serif;"><b>${numeroReferente}</b></span>.
             </p>
-            <br>
             <span style="font-size: 15px">Itaúna, ${dia} de ${mes} de 2023</span>
+            <br>
+            <span style="font-size: 18px">Endereço: R. Josias Machado, 94 - Centro, Itaúna</span>
+            <br>
+            <span style="font-size: 18px">Numero da Empresa: (37) 3226-9519</span>
+            <br>
+            <span style="font-size: 18px">Instagram: @newfiberfibra</span>
+            <br>
+            <span style="font-size: 18px">Facebook: @newfiberfibra</span>
+
+
         </div>
         
         `;
