@@ -71,7 +71,7 @@
         }
 
         .logo-container img {
-            width: 350px; /* Ajuste o tamanho conforme necessário */
+            width: 300px; /* Ajuste o tamanho conforme necessário */
             height: auto;
         }
     </style>
@@ -94,21 +94,21 @@
             <div class="mb-3">
                 <label for="name1" class="form-label">Nome do Cliente </label>
                 <input type="text" class="form-control" style="background-color: rgb(255, 255, 255);text-transform:uppercase" id="name1"
-                    placeholder="Nome do Cliente">
+                    placeholder="Nome do Cliente"  required>
             </div>
             <div class="mb-3">
                 <label for="address1" class="form-label">Endereço </label>
                 <input type="text" class="form-control" style="background-color: rgb(255, 255, 255);text-transform:uppercase" id="address1"
-                    placeholder="Exemplo: R. Josias Machado, 94 - Centro, Itaúna">
+                    placeholder="Exemplo: R. Josias Machado, 94 - Centro, Itaúna" required>
             </div>
             <div class="mb-3">
                 <label for="day" class="form-label">Dia </label>
                 <input type="number" class="form-control" style="background-color: rgb(255, 255, 255);" id="day"
-                    placeholder="Data de lançamento da carta">
+                    placeholder="Data de lançamento da carta" required>
             </div>
             <div class="mb-3">
                 <label for="month" class="form-label">Mês</label>
-                <select class="form-select" style="background-color: rgb(255, 255, 255);" id="month">
+                <select class="form-select" style="background-color: rgb(255, 255, 255);" id="month" required>
                     <option value="Janeiro">Janeiro</option>
                     <option value="Janeiro">Fevereiro</option>
                     <option value="Março">Março</option>
@@ -125,7 +125,7 @@
             </div>
             <div class="mb-3">
                 <label for="referenceNumber" class="form-label">Número Referente:</label>
-                <select class="form-select" style="background-color: rgb(255, 255, 255);" id="referenceNumber">
+                <select class="form-select" style="background-color: rgb(255, 255, 255);" id="referenceNumber" required>
                     <!-- Adicione as opções com os números desejados -->
                     <option value=""></option>
                     <option value="(37) 9 8404-4166">Larissa</option>
@@ -198,15 +198,15 @@
         <br>
             Se tiver alguma dúvida ou precisar de mais informações, fique à vontade para nos ligar ou enviar uma mensagem. Estamos aqui para ajudar e garantir que você aproveite ao máximo nossos serviços. Obrigado por confiar em nós!<br><br>Atenciosamente,<br><br>DIREÇÃO DA NEWFIBER<br><br>   <span style="font-size: 18px;font-family: 'Noto Sans', sans-serif;"><b>${numeroReferente}</b></span>.
         </p>
-        <span style="font-size: 13px">Itaúna, ${dia} de ${mes} de 2023</span>
+        <span style="font-size: 15px">Itaúna, ${dia} de ${mes} de 2023</span>
         <br>
-        <span style="font-size: 13px">Endereço: R. Josias Machado, 94 - Centro, Itaúna</span>
+        <span style="font-size: 15px">Endereço: R. Josias Machado, 94 - Centro, Itaúna</span>
         <br>
-        <span style="font-size: 13px">Numero da Empresa: (37) 3226-9519</span>
+        <span style="font-size: 15px">Numero da Empresa: (37) 3226-9519</span>
         <br>
-        <span style="font-size: 13px">Instagram: @newfiberfibra</span>
+        <span style="font-size: 15px">Instagram: @newfiberfibra</span>
         &vert;
-        <span style="font-size: 13px">Facebook: @newfiberfibra</span>
+        <b><span style="font-size: 15px">Facebook: @newfiberfibra</span></b>
 
 
     </div>
